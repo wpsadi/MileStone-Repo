@@ -1,1 +1,123 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .nav-option:hover, .nav-option:focus{
+                background-color: rgb(255, 100, 28);
+                color:#ffffff;
+            }
+            .nav-option{
+                border:1px white solid;
+            }
+
+            #options{
+                display:none;
+            }
+
+            #navbar{
+                padding: 0.5rem 2rem;
+            justify-content:space-between;
+            }
+
+            #footer{
+                text-align:center;
+                flex-direction:column;
+                gap:3rem;
+            }
+
+            .footer-items{
+                width:100%;
+            }
+            @media screen and (min-width:1024px){
+                #options{
+                    display:flex;
+                }
+
+                #navbar{
+                    justify-content:space-evenly;
+                }
+
+                #footer{
+                    text-align:start;
+                    align-items:center;
+                    flex-direction:row;
+                    gap:0rem;
+                }
+                
+                .footer-items{
+                    width:15.5rem;
+                }
+            }
+
+            @media screen and (max-width:1024px){
+                #footer-img-holder{
+                    width:100%;
+                    display:flex;
+                    justify-content:center;
+                    flex-wrap:nowrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" style="display:flex; flex-direction:row; align-items:center; ">
+            <div id="logo" style="display:flex; flex-direction:row; align-items:center; gap:0.8rem; cursor:pointer; flex-wrap:nowrap; align-items:center; width:fit-content;">
+                <img src="./assets/logo.png" alt="" style="height:2.5rem;">
+                <div style="font-weight:bold; font-family:monospace; font-size:2rem">E-GURU</div>
+            </div>
+
+            <div id="options" style="font-family:monospace; font-size:1.2rem; font-weight:lighter; flex-direction:row; justify-content:center; gap:2rem;">
+                <div style="padding:0.25rem 0.5rem; cursor:pointer; border-radius:0.25rem" class="nav-option">Home</div>
+                <div style="padding:0.25rem 0.5rem; cursor:pointer; border-radius:0.25rem" class="nav-option">About Us</div>
+                <div style="padding:0.25rem 0.5rem; cursor:pointer; border-radius:0.25rem" class="nav-option">Features</div>
+                <div style="padding:0.25rem 0.5rem; cursor:pointer; border-radius:0.25rem" class="nav-option">How it works</div>
+            </div>
+
+            <div id="signup" style="padding:0.5rem 0.75rem; border:1px solid black;border-radius:1rem; font-size:1.3rem; font-family:monospace; font-weight:bold;">Sign Up</div>
+        </nav>
+
+        <footer id="footer" style="display:flex; justify-content:space-evenly; background-color:rgb(38, 37, 67); padding:2.5rem 1rem; border-radius:1rem">
+            <div class="footer-items" style="display:flex; flex-direction:column; font-family:monospace; height:fit-content; cursor:default;">
+                <div style="font-size:1.8rem; color:#ffffff;">WHY WE ARE THE BEST</div>
+                <div style="font-size:0.8rem; color:#a7a0a0; margin-top: 0.625rem;">a learning system based on formalised teaching with help of.. ..</div>
+            </div>
+
+            <div class="footer-items" style="display:flex; flex-direction:column; font-family:monospace; height:fit-content; cursor:pointer;">
+                <div id="footer-img-holder">
+                    <div style=" background-color: #00ffff; height:2.5rem; width:2.5rem; text-align:center; border-radius:0.5rem;">
+                        <img src="./assets/vector3.png" alt="" style="height:1.5rem; width:1.5rem; margin-top:0.5rem;">
+                    </div>
+                </div>
+
+                <div style="font-size:1.5rem; color:#ffffff; margin-top: 0.625rem;">EXPERT TEACHER</div>
+                <div style="font-size:0.8rem; color:#a7a0a0; margin-top: 0.625rem;">a learning system based on formalised teaching</div>
+            </div>
+
+            <div class="footer-items" style="display:flex; flex-direction:column; font-family:monospace; height:fit-content; cursor:pointer;">
+                <div id="footer-img-holder">
+                    <div style=" background-color: #ff4500; height:2.5rem; width:2.5rem; text-align:center; border-radius:0.5rem;">
+                        <img src="./assets/vector2.png" alt="" style="height:1.5rem; width:1.5rem; margin-top:0.5rem;">
+                    </div>
+                </div>
+
+                <div style="font-size:1.5rem; color:#ffffff; margin-top: 0.625rem;">ONLINE COURSES</div>
+                <div style="font-size:0.8rem; color:#a7a0a0; margin-top: 0.625rem;">a learning system based on formalised teaching</div>
+            </div>
+
+            <div class="footer-items" style="display:flex; flex-direction:column; font-family:monospace; height:fit-content; cursor:pointer;">
+                <div id="footer-img-holder">
+                    <div style=" background-color: #b168ce; height:2.5rem; width:2.5rem; text-align:center; border-radius:0.5rem;">
+                        <img src="./assets/vector1.png" alt="" style="height:1.5rem; width:1.5rem; margin-top:0.5rem;">
+                    </div>
+                </div>
+
+                <div style="font-size:1.5rem; color:#ffffff; margin-top: 0.625rem;">24/7 SUPPORT</div>
+                <div style="font-size:0.8rem; color:#a7a0a0; margin-top: 0.625rem;">a learning system based on formalised teaching</div>
+            </div>
+        </footer>
+    </body>
+</html>
