@@ -1,4 +1,4 @@
-FROM library/node:18-bullseye
+FROM library/node:18-bookworm
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update \
