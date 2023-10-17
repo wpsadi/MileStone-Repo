@@ -1,0 +1,73 @@
+#main-banner{
+   position:relative;
+   width:100%;
+   /* height:80vh; */
+   height:600px;
+   /* box-sizing:border-box; */
+}
+
+section#main-banner >#banner-holder{
+   border-radius:12px;
+   position:relative;
+   top:0px;
+   height:100%;
+   filter: brightness(0.7);
+
+
+}
+
+section#main-banner >#banner-holder > img{
+   filter: brightness(0.7);
+   border-radius:12px;
+   width:100%;
+   height:100%;
+}
+
+#main-banner > div{
+   position:absolute;
+   top:0px;
+   height:100%;
+
+   /* min-height:calc(82vh); */
+   width:100%;
+   filter: brightness(1.0);
+   display:flex;
+   align-items: center;
+}
+
+#main-banner > div > div{
+   /* box-sizing:border-box; */
+   /* padding: 12px 0px; */
+   margin-left:20px;
+   /* padding-left: 10px; */
+   border-radius:4px;
+   border-left:4px solid #fff;
+   width:50%;
+   top:0px;
+   position:relative;
+}
+
+#main-banner > div > div > h3{
+   font-size:24px;
+   font-family:arial;
+   color:#cac2c2;
+   filter: drop-shadow(0px -10px 1.5px #696969);
+
+}
+
+#main-banner > div > div > h1{
+   font-size:30px;
+   font-family:arial;
+   filter: drop-shadow(290px 0px 1.5px #696969);
+   color:#696969;
+}
+
+@media screen and (max-width:768px){
+   #main-banner > div > div{
+      width:90%;
+   }
+
+   #main-banner > div > div > h1{
+      filter: drop-shadow(240px 0px 1.5px #696969);
+   }
+}

@@ -1,0 +1,79 @@
+body{
+   margin:0px;
+   width:98vw;
+}
+
+#topbar{
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:center;
+   width:100%;
+   gap:10%;
+   height: 50px;
+   
+   padding: 0px 8px;
+   box-sizing:border-box;
+   background:  linear-gradient(to left,#FFAB99,#EFE9AE);
+
+}
+
+@media screen and (max-width:768px){
+   #topbar{
+      height:fit-content;
+      gap:13px;
+      padding: 4px 0px;
+   }
+}
+
+#social-links{
+   display:flex;
+   height:100%;
+}
+
+#social-links > i{
+   display:flex;
+   align-items:Center;
+   font-size:28px;
+   color:#fff;
+   height:100%;
+   padding: 0px 12px;
+   border-right: 2px solid #fff;
+}
+
+#contact-details{
+   display:flex;
+   align-items:center;
+   height:100%;
+   gap:20px;
+   flex-wrap:nowrap;
+   color:#fff;
+   font-size:20px;
+}
+
+#demo-boox{
+   height:100%;
+   display:flex;
+   align-items:center;
+}
+
+#demo-boox > div {
+   color:#fff;
+   padding: 4px 6px;
+   width:fit-content;
+   height:fit-content;
+   border:2px solid #fff;
+   border-radius:2rem;
+   font-size:22px;;
+}
+
+#demo-boox > div:hover > span{
+   background: linear-gradient(to left,#FFAB99,#EFE9AE);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#demo-boox > div:hover{
+   background:#fff;
+}

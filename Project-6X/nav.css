@@ -1,0 +1,82 @@
+nav{
+   /* padding-top:2vh; */
+   height:70px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:row;
+   flex-wrap:wrap;
+   gap:12%;
+   width:100%;
+   /* margin-bottom:6px; */
+}
+
+#name-of-website{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:100%;
+   width:fit-content;
+   font-size:30px;
+   gap:6px;
+   font-weight:bold;
+   font-family:monospace;
+}
+
+.bi-layout-text-window-reverse{
+   background:  linear-gradient(to left,#FFAB99,#EFE9AE);
+   background-clip: text;
+   -webkit-background-clip: text;
+   font-size:32px;
+   -webkit-text-fill-color: transparent;
+
+}
+
+
+#navbar{
+   font-family:arial;
+   height:100%;
+   display:flex;
+   /* flex-direction:row; */
+   /* justify-content:center; */
+   align-items:center;
+   /* flex-wrap:wrap; */
+   font-size:22px;
+   flex-wrap:wrap;
+   gap:15px
+}
+
+.navItem{
+   display:flex;
+   flex-wrap:nowrap;
+   gap:2px;
+}
+
+#search{
+   font-size:28px;
+}
+
+#buy-Now{
+   height:100%;
+   box-sizing:border-box;
+   padding:4px 12px;
+   border-radius:8px;
+   display:flex;
+   align-items:center;
+   color:#000;
+   /* border:2px solid #000; */
+   background:#EFE9AE;
+   font-family:monospace;
+}
+
+@media screen and (max-width:768px){
+   nav{
+      height:fit-content;
+      padding: 3px 0px;
+      gap:8px;
+   }
+   #navbar{
+      justify-content:center;
+      gap:14px;
+   }
+}

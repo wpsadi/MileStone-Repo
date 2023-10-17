@@ -8,10 +8,15 @@ body > div{
     width:1280px;
 }
 
+header{
+    width:100%;
+}
+
 header #topbar{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    wisdth:100%
     align-items:center;
     justify-content: center;
     gap:20vw;
